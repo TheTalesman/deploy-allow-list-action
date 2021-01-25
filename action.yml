@@ -1,0 +1,18 @@
+name: 'Deploy Allow-List to Hasura'
+description: 'Deploy allow-list to hasura metadata api'
+inputs:
+  metadata-host:
+    description: 'url to hasura metadata api'
+    required: true
+  admin-secret:
+    description: 'admin secret to auth in metadata api'
+    required: true
+  allow-list: 
+    description: 'queries to be added to allow-list'
+    required:true
+outputs:
+  success: 
+    description: 'If the operation was succesfull'
+runs:
+  using: 'node12'
+  main: 'index.js'

@@ -1,0 +1,13 @@
+{
+  "name": "deploy-allow-list-action",
+  "version": "1.0.0",
+  "description": "Github Action to add queries in hasura allowed list.",
+  "main": "index.js",
+  "repository": "https://github.com/TheTalesman/deploy-allow-list-action.git",
+  "author": "TheTalesman <alison@taller.net.br>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
